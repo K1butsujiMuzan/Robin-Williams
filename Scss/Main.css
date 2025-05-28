@@ -540,4 +540,91 @@
   .Philosophy__GlassBallBig {
     display: none;
   }
+}
+.Skillset {
+  width: 100%;
+  background-color: var(--color-base);
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.Skillset__Chief {
+  max-width: 1750px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: 1fr;
+  height: auto;
+  padding: 7% 5%;
+}
+.Skillset__Left h1 {
+  color: var(--color-text);
+  font-size: 55px;
+  font-weight: 700;
+}
+.Skillset__Left p {
+  margin-top: 2rem;
+  color: var(--color-light-grey);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 20rem;
+}
+.Skillset__Right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 3rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+.Skillset__Card img {
+  height: 32px;
+  width: 32px;
+}
+.Skillset__Card h1 {
+  margin-top: 1rem;
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.Skillset__Card p {
+  margin-top: 1rem;
+  color: var(--color-light-grey);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 90%;
+}
+
+@media (max-width: 1350px) {
+  .Skillset__Chief {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  .Skillset__Left p {
+    width: 100%;
+  }
+  .Skillset__Right {
+    -moz-column-gap: 10%;
+         column-gap: 10%;
+  }
+  .Skillset__Card p {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .Skillset__Chief {
+    padding: 12% 5%;
+  }
+  .Skillset__Left h1 {
+    font-size: 32px;
+  }
+  .Skillset__Right {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=Main.css.map */

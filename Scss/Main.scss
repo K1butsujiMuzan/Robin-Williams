@@ -620,3 +620,118 @@
         }
     }
 }
+
+.Skillset{
+    width: 100%;
+    background-color: var(--color-base);
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    &__Chief{    
+        max-width: 1750px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column: 1fr;
+        height: auto;
+        padding: 7% 5%;
+    }
+
+    &__Left{  
+        h1{
+            color: var(--color-text);
+            font-size: 55px;
+            font-weight: 700;
+        }
+
+        p{
+            margin-top: 2rem;
+            color: var(--color-light-grey);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+            width: 20rem;
+        }
+    }
+
+    &__Right{  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        row-gap: 3rem;
+        column-gap: 5rem;
+    }
+
+    &__Card{
+        
+        img{
+            height: 32px;
+            width: 32px;
+        }
+
+        h1{
+            margin-top: 1rem;
+            color: var(--color-text);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 150%;
+        }
+
+        p{
+            margin-top: 1rem;
+            color: var(--color-light-grey);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            width: 90%;
+        }
+    }
+}
+@media (max-width: 1350px) {
+    .Skillset{
+        &__Chief{
+            grid-template-columns: 1fr;
+            row-gap: 3rem;
+        }
+
+        &__Left{
+            p{
+                width: 100%;
+            }
+        }
+
+        &__Right{
+            column-gap: 10%;
+        }
+
+        &__Card{        
+
+            p{
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Skillset{
+
+        &__Chief{
+            padding: 12% 5%;
+        }
+
+        &__Left{
+            h1{
+                font-size: 32px;
+            }
+        }
+
+        &__Right{
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+        }
+    }
+}
