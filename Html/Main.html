@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Scss/Main.css">
+</head>
+<body>
+    <nav class="NavMenu">                     
+        <div class="NavMenu__Left">
+            <a href="Main.html"><img src="../Pics/Header/Logotip.svg" alt="Logo"></a>
+        </div>
+        <div class="NavMenu__Right">
+            <div class="NavMenu__MenuBG">
+                <div class="NavMenu__Links">
+                    <a href="">Experience</a>
+                    <a href="">Work</a>
+                    <a href="">Photography</a>
+                    <a href="">Contact</a>    
+                </div>   
+            </div>           
+        </div>
+        <button onclick="CheckBurgerMenu()" class="NavMenu__Burger">
+            <img class="NavMenu__OpenButton" src="../Pics/Header/BurgerMenu.png" alt="BurgerIcon">
+        </button>        
+    </nav>
+    <header class="HeaderInfo">
+        <div class="HeaderInfo__Chief">
+            <img class="HeaderInfo__ImgBig" src="../Pics/Header/Robin.webp" alt="">
+            <img class="HeaderInfo__ImgMedium" src="../Pics/Header/RobinAdapt.jpg" alt="">
+            <div class="HeaderInfo__Right">
+                <h1>I’m Robin Williams. A Product Designer <span>based in Italy.</span></h1>
+                <p>I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="WorkExperience">
+            <div class="WorkExperience__Chief">
+                <div class="WorkExperience__Up">
+                    <p>WORK EXPERIENCE</p>
+                    <h1>Companies I have worked for in the past</h1>
+                </div>
+                <div class="WorkExperience__Down">
+                    <div class="WorkExperience__Card">
+                        <h1>01</h1>
+                        <h2><span class="WorkExperience__Green">Google</span>, Interaction Designer</h2>
+                        <p>I currently am the lead designer on the interaction design team for Google Play.</p>
+                    </div>
+                    <div class="WorkExperience__Card">
+                        <h1>02</h1>
+                        <h2><span class="WorkExperience__Blue">Facebook</span>, Product Designer</h2>
+                        <p>I’ve worked on a wide variety of internal tools for facebook over the past 6 years.</p>
+                    </div>
+                    <div class="WorkExperience__Card">
+                        <h1>03</h1>
+                        <h2><span class="WorkExperience__Pink">Dribbble</span>, Graphic Designer</h2>
+                        <p>I started my design career with Dribbble. I was incharge of creating illustrations for the platform.</p>
+                    </div>
+                </div>
+            </div>          
+        </div>
+
+        <div class="Philosophy">
+            <div class="Philosophy__Chief">
+                <div class="Philosophy__Left">
+                    <h1>Philosophy & values</h1>
+                    <p>I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.</p>
+                    <div class="Philosophy__Link">
+                        <a href="">More about me</a>          
+                    </div>
+                </div>
+                <div class="Philosophy__Right">
+                    <img class="Philosophy__GlassBallBig" src="../Pics/Main/GlassBig.png" alt="GlassBall">
+                    <img class="Philosophy__GlassBallSmall" src="../Pics/Main/GlassSmall.png" alt="GlassBallSmall">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>    
+    <div class="ModalBurgerMenu">     
+        <button onclick="CloseBurgerMenu()"class="ModalBurgerMenu__Button" >
+            <img class="ModalBurgerMenu__ImageClose" src="../Pics/Header/CloseBurger.png" alt="">
+        </button>
+        <div class="ModalBurgerMenu__Links">           
+            <a href="">Experience</a>
+            <a href="">Work</a>
+            <a href="">Photography</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+    <script src="../Js/Main.js"></script>
+</body>
+</html>
