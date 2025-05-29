@@ -18,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-main);
+    font-size: 16px;
 }
 nav{
     position: fixed;
@@ -54,7 +55,7 @@ nav{
                 color: var(--color-text);
                 text-decoration: none;
                 font-weight: 400;
-                font-size:16px;
+                font-size:1rem;
                 transition: 0.4s;
             }
 
@@ -142,14 +143,14 @@ nav{
         h1{ 
             letter-spacing: 0.3rem;     
             color:var(--color-text);
-            font-size: 78px;
+            font-size: 4.875rem;
             width: 46rem;
         }
 
         span{
             letter-spacing: 0.3rem;  
             color: #8c8e8e;
-            font-size: 78px;
+            font-size: 4.875rem;
         }
 
         p{
@@ -157,7 +158,7 @@ nav{
             margin-top: 2rem;
             width: 46rem;
             color: var(--color-light-grey);
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 
@@ -166,10 +167,10 @@ nav{
             margin-right: 2rem;
             h1{
                 width: 25rem;
-                font-size: 46px;
+                font-size: 2.875rem;
             }
             span{
-                font-size: 56px;
+                font-size: 3.5rem;
             }
             p{
                 width: 25rem;
@@ -262,14 +263,14 @@ nav{
                 h1{ 
                     letter-spacing: 0rem;     
                     color:var(--color-text);
-                    font-size: 48px;
+                    font-size: 3rem;
                     width: 90%;
                 }
 
                 span{
                     letter-spacing: 0rem;  
                     color: #8c8e8e;
-                    font-size: 48px;
+                    font-size: 3rem;
                 }
 
                 p{
@@ -277,7 +278,7 @@ nav{
                     margin-top: 2rem;
                     width: 90%;
                     color: var(--color-light-grey);
-                    font-size: 18px;
+                    font-size: 1.125rem;
                 }
         }
     }
@@ -307,12 +308,12 @@ nav{
             a{
                 color: var(--color-text);
                 text-decoration: none;
-                font-size: 24px;
+                font-size: 1.5rem;
             }
 
             @media (max-width: 300px) {
                 a{
-                    font-size: 15px;
+                    font-size: 1rem;
                 }
             }
         }
@@ -344,13 +345,13 @@ nav{
         p{
             color: var(--color-light-grey);
             font-weight: 700;
-            font-size: 16px;
+            font-size: 1rem;
         }
 
         h1{
             color: var(--color-text);
             margin-top: 1rem;
-            font-size: 55px;
+            font-size: 3.5rem;
             font-weight: 700;
             width: 38rem;
             margin-bottom: 1rem;
@@ -366,19 +367,19 @@ nav{
         width: 19rem;
 
         h1{
-            font-size: 117px;
+            font-size: 7.5rem;
             font-weight: 400;
             color: var(--color-light-grey);
         }
 
         h2{
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 700;
             line-height: 150%;
         }
 
         span{
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 700;
             line-height: 150%;
         }
@@ -387,7 +388,7 @@ nav{
             margin-top: 1rem;
             line-height: 150%;
             color: var(--color-light-grey);
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 400;
         }
     }
@@ -441,7 +442,7 @@ nav{
             width: 100%;
 
             h1{
-                font-size: 32px;
+                font-size: 2rem;
                 margin-top: 1rem;
                 width: 100%;
             }
@@ -486,14 +487,14 @@ nav{
         h1{
             width: 80%;
             color: var(--color-level1);
-            font-size: 55px;
+            font-size: 3.5rem;
             font-weight: 700;
         }
         
         p{
             margin-top: 2rem;
             width: 80%;
-            font-size: 18px;
+            font-size: 1.125rem;
             color: #5B6876;
             font-weight: 400;
         }              
@@ -503,7 +504,7 @@ nav{
         width: 80%;
         margin-top: 9rem;
         a{        
-            font-size: 16px;
+            font-size: 1rem;
             color: var(--color-level1);
             line-height: 150%;
             font-weight: 400;
@@ -589,7 +590,7 @@ nav{
             h1{
                 margin-top: 2rem;
                 width: 90%;
-                font-size: 32px;
+                font-size: 2rem;
             }
             
             p{
@@ -645,28 +646,28 @@ nav{
     height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &__Chief{    
         max-width: 1750px;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-column: 1fr;
         height: auto;
-        padding: 7% 5%;
+        padding: 7rem 5rem;
     }
 
     &__Left{  
         h1{
             color: var(--color-text);
-            font-size: 55px;
+            font-size: 3.5rem;
             font-weight: 700;
         }
 
         p{
             margin-top: 2rem;
             color: var(--color-light-grey);
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 400;
             line-height: 150%;
             width: 20rem;
@@ -693,7 +694,7 @@ nav{
         h1{
             margin-top: 1rem;
             color: var(--color-text);
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 700;
             line-height: 150%;
         }
@@ -701,7 +702,7 @@ nav{
         p{
             margin-top: 1rem;
             color: var(--color-light-grey);
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 400;
             line-height: 150%;
             width: 90%;
@@ -743,13 +744,73 @@ nav{
 
         &__Left{
             h1{
-                font-size: 32px;
+                font-size: 2rem;
             }
         }
 
         &__Right{
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr;
+        }
+    }
+}
+
+.SkillsetIcons{
+    width: 100%;
+    background-color: var(--color-base);
+    padding-bottom: 7rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__Chief{
+        width: 100%;
+        max-width: 1750px;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 1fr;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);      
+    }
+
+    &__Card{  
+        border: 1px solid var(--color-level1);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 15% 20%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .SkillsetIcons{
+        &__Chief{
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }     
+
+        &__Card{
+            padding: 10% 20%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .SkillsetIcons{
+        padding-bottom: 12%;   
+    }
+}
+
+@media (max-width: 368px) {
+    .SkillsetIcons{
+        &__Card{
+            img{
+                height: 1rem;
+            }
         }
     }
 }
