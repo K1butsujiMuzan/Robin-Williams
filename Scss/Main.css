@@ -23,7 +23,7 @@
 
 nav {
   position: fixed;
-  z-index: 1100;
+  z-index: 999;
 }
 
 .NavMenu {
@@ -455,8 +455,22 @@ nav {
   line-height: 150%;
   font-weight: 400;
   text-decoration: none;
-  border-bottom: 1px solid var(--color-light-grey);
   padding-bottom: 0.3rem;
+  position: relative;
+}
+.Philosophy__Link a::after {
+  content: "";
+  display: flex;
+  width: 20%;
+  height: 2px;
+  background-color: var(--color-light-grey);
+  position: absolute;
+  left: 40%;
+  transition: all 1s;
+}
+.Philosophy__Link a:hover::after {
+  width: 100%;
+  left: 0;
 }
 .Philosophy__Right {
   width: 100%;
