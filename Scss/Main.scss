@@ -499,10 +499,6 @@ nav{
         }    
     }
 
-    &__Right{
-
-    }
-
     &__Link{
         width: 80%;
         margin-top: 18%;
@@ -545,7 +541,13 @@ nav{
 @media (max-width: 1200px) {
     .LightBlock{
 
-        
+        &__Left{
+            max-height: 800px;
+        }
+
+        &__Right{
+            max-height: 800px;
+        }
 
         &__GlassBallBig{
             display: none;
@@ -553,6 +555,7 @@ nav{
 
         &__GlassBallSmall{
             display: block;
+            height: 100%;
         }
     }
 }

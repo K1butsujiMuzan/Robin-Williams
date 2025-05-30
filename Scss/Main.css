@@ -482,11 +482,18 @@ nav {
 }
 
 @media (max-width: 1200px) {
+  .LightBlock__Left {
+    max-height: 800px;
+  }
+  .LightBlock__Right {
+    max-height: 800px;
+  }
   .LightBlock__GlassBallBig {
     display: none;
   }
   .LightBlock__GlassBallSmall {
     display: block;
+    height: 100%;
   }
 }
 @media (max-width: 768px) {
