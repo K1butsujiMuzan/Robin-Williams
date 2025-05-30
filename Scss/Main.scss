@@ -462,12 +462,19 @@ nav{
     }    
 }
 
+.BGLight{
+    background-color: var(--color-peach-accent);
+}
+
+.BGViolet{
+    background-color: var(--color-violet-accent);
+}
+
 .LightBlock{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-peach-accent);
 
     &__Chief{
         width: 100%;

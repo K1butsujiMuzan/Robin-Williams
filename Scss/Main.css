@@ -412,12 +412,19 @@ nav {
     width: 100%;
   }
 }
+.BGLight {
+  background-color: var(--color-peach-accent);
+}
+
+.BGViolet {
+  background-color: var(--color-violet-accent);
+}
+
 .LightBlock {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-peach-accent);
 }
 .LightBlock__Chief {
   width: 100%;
