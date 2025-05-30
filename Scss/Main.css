@@ -412,45 +412,44 @@ nav {
     width: 100%;
   }
 }
-.Philosophy {
+.LightBlock {
   width: 100%;
-  height: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: var(--color-peach-accent);
 }
-.Philosophy__Chief {
-  max-width: 1750px;
+.LightBlock__Chief {
   width: 100%;
+  max-width: 1750px;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 560px;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr;
 }
-.Philosophy__Left {
+.LightBlock__Left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.Philosophy__Left h1 {
+.LightBlock__Left h1 {
   width: 80%;
   color: var(--color-level1);
   font-size: 3.5rem;
   font-weight: 700;
 }
-.Philosophy__Left p {
-  margin-top: 2rem;
+.LightBlock__Left p {
+  margin-top: 3%;
   width: 80%;
   font-size: 1.125rem;
   color: #5B6876;
   font-weight: 400;
 }
-.Philosophy__Link {
+.LightBlock__Link {
   width: 80%;
-  margin-top: 9rem;
+  margin-top: 18%;
 }
-.Philosophy__Link a {
+.LightBlock__Link a {
   font-size: 1rem;
   color: var(--color-level1);
   line-height: 150%;
@@ -459,7 +458,7 @@ nav {
   padding-bottom: 0.3rem;
   position: relative;
 }
-.Philosophy__Link a::after {
+.LightBlock__Link a::after {
   content: "";
   display: flex;
   width: 20%;
@@ -469,96 +468,60 @@ nav {
   left: 40%;
   transition: all 1s;
 }
-.Philosophy__Link a:hover::after {
+.LightBlock__Link a:hover::after {
   width: 100%;
   left: 0;
 }
-.Philosophy__Right {
+.LightBlock__GlassBallBig {
+  display: block;
   width: 100%;
-  display: flex;
-  justify-content: end;
 }
-.Philosophy__Right img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.Philosophy__GlassBallSmall {
+.LightBlock__GlassBallSmall {
   display: none;
+  width: 100%;
 }
 
-@media (max-width: 1350px) {
-  .Philosophy__GlassBallSmall {
-    display: block;
-  }
-  .Philosophy__GlassBallBig {
+@media (max-width: 1200px) {
+  .LightBlock__GlassBallBig {
     display: none;
   }
-  .Philosophy__Right img {
-    width: auto;
-    height: 100%;
-  }
-  .Philosophy__Link {
-    margin-top: 4.5rem;
+  .LightBlock__GlassBallSmall {
+    display: block;
   }
 }
 @media (max-width: 768px) {
-  .Philosophy__Chief {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-    gap: 2rem;
+  .LightBlock__Chief {
+    max-width: 1750px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
   }
-  .Philosophy__Left {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    height: auto;
+  .LightBlock__GlassBallBig {
+    display: block;
   }
-  .Philosophy__Left h1 {
+  .LightBlock__GlassBallSmall {
+    display: none;
+  }
+  .LightBlock__Left h1 {
     margin-top: 2rem;
     width: 90%;
     font-size: 2rem;
   }
-  .Philosophy__Left p {
+  .LightBlock__Left p {
     margin-top: 2rem;
     width: 90%;
   }
-  .Philosophy__Link {
+  .LightBlock__Link {
     width: 90%;
-    margin-top: 20%;
-  }
-  .Philosophy__Link a {
-    padding-bottom: 0.1rem;
-  }
-  .Philosophy__Right {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    max-height: 480px;
-  }
-  .Philosophy__Right img {
-    max-height: 480px;
-    width: 100%;
-  }
-  .Philosophy__GlassBallSmall {
-    display: none;
-  }
-  .Philosophy__GlassBallBig {
-    display: block;
+    margin-bottom: 2rem;
   }
 }
-@media (max-width: 460px) {
-  .Philosophy__GlassBallSmall {
-    display: block;
-  }
-  .Philosophy__GlassBallBig {
+@media (max-width: 400px) {
+  .LightBlock__GlassBallBig {
     display: none;
+  }
+  .LightBlock__GlassBallSmall {
+    display: block;
   }
 }
 .Skillset {
