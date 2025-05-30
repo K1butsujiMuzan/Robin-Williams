@@ -779,4 +779,92 @@ nav {
   .MyProjects__Right button {
     padding: 1rem 2rem;
   }
+}
+.Dribbble {
+  width: 100%;
+  background-color: var(--color-base);
+  display: flex;
+  justify-content: center;
+}
+.Dribbble__Chief {
+  width: 80%;
+  max-width: 1750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0rem 7rem 0rem;
+}
+.Dribbble__Up {
+  width: 100%;
+}
+.Dribbble__Up h1 {
+  color: var(--color-text);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.Dribbble__Up P {
+  margin-top: 1rem;
+  color: var(--color-light-grey);
+  font-size: 1.125rem;
+  width: 45%;
+}
+.Dribbble__Link {
+  margin-top: 3rem;
+}
+.Dribbble__Link a {
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+}
+.Dribbble__Link a::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  height: 2px;
+  width: 20%;
+  left: 40%;
+  background-color: var(--color-light-grey);
+  transition: 1s;
+}
+.Dribbble__Link a:hover::after {
+  width: 100%;
+  left: 0;
+}
+.Dribbble__Down {
+  margin-top: 7rem;
+  width: 100%;
+}
+.Dribbble__ImgBig {
+  display: block;
+  width: 100%;
+}
+.Dribbble__ImgSmall {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 1350px) {
+  .Dribbble__Up p {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .Dribbble__Down {
+    margin-top: 20%;
+  }
+}
+@media (max-width: 368px) {
+  .Dribbble__Up h1 {
+    font-size: 2.5rem;
+  }
+  .Dribbble__ImgBig {
+    display: none;
+  }
+  .Dribbble__ImgSmall {
+    display: block;
+  }
 }/*# sourceMappingURL=Main.css.map */
