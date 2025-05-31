@@ -1035,3 +1035,168 @@ nav{
         }
     }
 }
+
+.PeopleSay{
+    width: 100%;
+    background-color: var(--color-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__Chief{
+        width: 90%;
+        max-width: 1750px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr;
+        column-gap: 5%;
+        padding: 7rem 0 7rem 0;
+    }
+
+    &__Left{
+
+        h1{
+            width: 80%;
+            color: var(--color-text);
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        p{
+            width: 80%;
+            margin-top: 1rem;
+            color: var(--color-light-grey);
+            font-size: 1.125rem;
+            line-height: 150%;
+            font-weight: 400;
+        }     
+    }
+
+    &__Link{
+        margin-top: 2rem;
+
+        a{         
+            color: var(--color-text);
+            line-height: 150%;
+            font-size: 1rem;
+            font-weight: 400;
+            text-decoration: none;
+            position: relative;
+        }
+        a::after{
+            content: "";
+            display: flex;
+            position: absolute;
+            height: 2px;
+            width: 20%;
+            background-color: var(--color-light-grey);
+            left: 40%;
+            transition: 1s;
+        }
+        a:hover::after{
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    &__Right{
+        display: flex;
+        flex-direction: column;  
+        gap: 7rem;
+    }
+
+    &__Down{
+        padding: 10%;
+        border: 1px solid var(--color-light-grey);
+
+        h2{
+            color: var(--color-text);
+            font-size: 2rem;
+            line-height: 150%;
+            font-weight: 700;
+        }
+
+        h3{
+            margin-top: 10%;
+            color: #5B6876;
+            font-size: 1.125rem;
+            font-weight: 700;
+            line-height: 150%;
+        }
+
+        h4{
+            color: #5B6876;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+
+    &__ImgBig{
+        display: block;
+        width: 100%;
+    }
+
+    &__ImgSmall{
+        display: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .PeopleSay{
+        &__ImgBig{
+            display: none;
+        }
+
+        &__ImgSmall{
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 786px) {
+    .PeopleSay{
+
+        &__Chief{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        &__Right{
+            margin-top: 3rem;
+        }
+
+        &__Down{
+            h2{
+                line-height: 100%;
+            }
+        }
+
+        &__Left{
+            h1{
+                font-size: 2rem;
+                width: 100%;
+            }
+        }
+        &__ImgBig{
+            display: block;
+        }
+
+        &__ImgSmall{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 368px) {
+    .PeopleSay{
+        &__ImgBig{
+            display: none;
+        }
+
+        &__ImgSmall{
+            display: block;
+        }
+    }
+}
