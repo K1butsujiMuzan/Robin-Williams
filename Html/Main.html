@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Scss/Main.css">
+    <link rel="stylesheet" href="../css/Main.min.css">
     <link rel="Icon" href="../Pics/Icon.svg">
 </head>
 <body>
@@ -15,10 +15,10 @@
         <div class="NavMenu__Right">
             <div class="NavMenu__MenuBG">
                 <div class="NavMenu__Links">
-                    <a href="">Experience</a>
-                    <a href="">Work</a>
-                    <a href="">Photography</a>
-                    <a href="">Contact</a>    
+                    <a href="#Experience">Experience</a>
+                    <a href="#Work">Work</a>
+                    <a href="#Photography">Photography</a>
+                    <a href="#Contact">Contact</a>    
                 </div>   
             </div>           
         </div>
@@ -32,7 +32,7 @@
             <img class="HeaderInfo__ImgMedium" src="../Pics/Header/RobinAdapt.jpg" alt="">
             <div class="HeaderInfo__Right">
                 <h1>I’m Robin Williams. A Product Designer <span>based in Italy.</span></h1>
-                <p>I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
+                <p id="Experience">I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
             </div>
         </div>
     </header>
@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <div class="Skillset">
+        <div class="Skillset" id="Work">
             <div class="Skillset__Chief">
                 <div class="Skillset__Left">
                     <h1>Skillset</h1>
@@ -158,7 +158,7 @@
                             <p>I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
                         </div>
                     </div>
-                    <button><a href="">VIEW ALL PROJECTS</a></button>
+                    <button class="ButtonAnim"><a href="">VIEW ALL PROJECTS</a></button>
                 </div>
             </div>
         </div>
@@ -242,10 +242,73 @@
             </div>
         </div>
 
-    </main>
-    <footer>
+        <div class="PhotographyBlock" id="Photography">
+            <div class="PhotographyBlock__Chief">
+                <div class="PhotographyBlock__Up">
+                    <h1>Photography</h1>
+                    <p>Here is a collection of my best travel pictures that I took while travelling places all around the world. </p>
+                    <div class="PhotographyBlock__Buttons">
+                        <button id="button1" class="PhotographyBlock__Button_Country ButtonAnim">ITALY</button>
+                        <button id="button2" class="PhotographyBlock__Button_Country ButtonAnim" >AUSTRALIA</button>
+                        <button id="button3" class="PhotographyBlock__Button_Country ButtonAnim" >INDIA</button>
+                        <button id="button4" class="PhotographyBlock__Button_Country ButtonAnim" >BRAZIL</button>
+                    </div>
+                </div>
+                <div class="PhotographyBlock__Down">
+                    <img src="../Pics/Main/Countries/Italy1.avif" alt="">
+                    <img src="../Pics/Main/Countries/Italy2.avif" alt="">
+                    <img src="../Pics/Main/Countries/Italy3.avif" alt="">
+                    <img src="../Pics/Main/Countries/Italy4.avif" alt="">
+                </div>
+            </div>
+        </div>
 
+        <div class="StartBlock" id="Contact">
+            <div class="StartBlock__Chief">
+                <div class="StartBlock__Left">
+                    <h1>Let’s get started</h1>
+                    <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
+                </div>
+                <div class="StartBlock__Right">
+                    <p>Name</p>
+                    <input type="text">
+                    <p>Email</p>
+                    <input type="email">
+                    <p>Message</p>
+                    <textarea name="" id=""></textarea>
+                    <button class="ButtonAnim">Let’s get started</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__Chief">
+            <div class="footer__Left">
+                <a href="Main.html"><img src="../Pics/footer/icon.png" alt=""></a>
+                <div class="footer__Icons">
+                    <a href=""><img src="../Pics/footer/twiter.svg" alt=""></a>
+                    <a href=""><img src="../Pics/footer/pink.svg" alt=""></a>
+                    <a href=""><img src="../Pics/footer/in.svg" alt=""></a>
+                </div>              
+            </div>
+            <div class="footer__Right">
+                <div class="footer__Right-left">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Work</a>
+                    <a href="">Process</a>
+                </div>
+                <div class="footer__Right-right">
+                    <a href="">Store</a>                
+                    <a href="">Blog</a>      
+                    <a href="">Reading List</a>
+                </div>               
+            </div>
+            <p>Not Copyright 2020 • Robin Williams. Webflow cloneable</p>
+        </div>
     </footer>    
+
     <div class="ModalBurgerMenu">     
         <button onclick="CloseBurgerMenu()"class="ModalBurgerMenu__Button" >
             <img class="ModalBurgerMenu__ImageClose" src="../Pics/Header/CloseBurger.png" alt="">

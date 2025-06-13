@@ -20,8 +20,7 @@ function CloseBurgerMenu() {
     BurgerMenuLinks.classList.toggle("Active");   
 }
 BurgerMenuLinks.addEventListener("click", function(e) {
-    if(e.target === BurgerMenuLinks)
-    {
+    if(e.target === BurgerMenuLinks) {
         CloseBurgerMenu();
     }
 });
@@ -29,3 +28,8 @@ BurgerMenuLinks.addEventListener("click", function(e) {
 if(window.innerWidth > 768) {
     BurgerMenuLinks.classList.remove("Active");
 }
+
+const ButtonCountry = document.querySelector(".PhotographyBlock__Button_Country");
+window.onload = ButtonCountry.classList.add("Active");
+
+
